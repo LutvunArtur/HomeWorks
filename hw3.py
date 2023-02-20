@@ -30,5 +30,5 @@ try:
     else:
         print("Please enter only the numbers shown")
     print("Reasult = ", res)
-except (ValueError, ZeroDivisionError, NameError):
+except (ValueError, ZeroDivisionError):
     print("Sorry invalid request, please try again :<")
