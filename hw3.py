@@ -20,12 +20,14 @@ try:
     func = int(input("What opperation do u want to do ? \n 1 '+' \n 2 '-' \n 3 '*' \n 4 '/' \n Your Answer:"))
     if func == 1:
         res = summa(num_1, num_2)
-    if func == 2:
+    elif func == 2:
         res = minus(num_1, num_2)
-    if func == 3:
+    elif func == 3:
         res = mn(num_1, num_2)
-    if func == 4:
+    elif func == 4:
         res = dil(num_1, num_2)
+    else:
+        print("Please enter only the numbers shown")
     print("Reasult = ", res)
 except (ValueError, ZeroDivisionError, NameError):
     print("Sorry invalid request, please try again :<")
