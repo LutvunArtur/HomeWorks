@@ -13,6 +13,7 @@ def dil(a, b):
 def mn(a, b):
     return a * b
 
+
 res = 0
 again = 0
 while again == 0:
@@ -35,6 +36,7 @@ while again == 0:
     except (ValueError, ZeroDivisionError):
         print("Sorry invalid request, please try again :<")
         continue
+
     reapeat = int(input("if you want to do another op \n 1 yea \n 2 no \n print here:"))
     try:
         if reapeat == 1:
@@ -44,7 +46,7 @@ while again == 0:
             break
         else:
             print("Enter only shown nums3.3")
-            reapeat == False
+            reapeat = False
             while reapeat:
                 reapeat = int(input("if you want to do another op \n 1 yea \n 2 no \n print here:"))
                 if reapeat == 1:
