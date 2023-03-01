@@ -94,7 +94,6 @@ print(count)
 value_2 = "hhello world!"
 for word in value_2:
     if value_2.islower():
-
         print(value_2.replace("h", "H"))
     else:
         print("Error")
