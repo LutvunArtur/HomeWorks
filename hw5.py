@@ -43,12 +43,14 @@ print(line[::-1])
 ############## h #############
 
 
-print(line[::])
+
 
 ###########  i #############
 
 
-print(len(line))
+for i in range(len(line)):
+    print(i)
+
 
 #######################################################
                      # 2
@@ -66,19 +68,11 @@ print(word_count + 1)
 
 ###############################################
 
-s = str(input("Enter your word \n"))
 
-ch = "g"
-
-for ch in s:
-    if ch in len(s):
-        print(s.find(ch))
-    else:
-        print("Specsymbol isn`t in your word/s ")
 
 ###############################################################
 
-                        # 1/1
+                        # 1.1
 
 
 ###############################################################
@@ -86,7 +80,6 @@ for ch in s:
 value_2 = "hhello world!"
 for word in value_2:
     if value_2.islower():
-        word = value_2.replace("h", "h")
-        print(word)
+        print(value_2.replace("h", "H"))
     else:
         print("Error")
