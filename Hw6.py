@@ -38,15 +38,15 @@ print(my_results)
 
 
 my_list2 = [
-    92,
+    21,
     99,
     1,
 ]
 
-for k in list(my_list2):
-    if len(my_list2) > 2:
-        my_list2.append(0)
-        print(my_list2)
-    else:
-        my_list2.append(my_list2[-1] + my_list2[-2])
-        print(my_list2)
+
+if len(my_list2) < 2:
+    my_list2.append(0)
+    print(my_list2)
+elif len(my_list2) >= 2:
+    my_list2.append(my_list2[-1] + my_list2[-2])
+    print(my_list2)
