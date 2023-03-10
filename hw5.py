@@ -97,5 +97,3 @@ midl_str = value_2[value_2.find("h") + 1: value_2.rfind("h")]
 end_str = value_2[value_2.rfind("h"):]
 result = start_str + midl_str.replace("h", "H") + end_str
 print(result)
-Ні, впринципі нема
-а
