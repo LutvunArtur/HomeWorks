@@ -1,30 +1,31 @@
 ########################### 1  #############
 
-# nums = 000
+# nums = 100
 #
-# sss = str(range(nums))
-# res = 0
-# res += sss.count("0")
+# find_zero = "0"
+#
+# num_str = str(nums)
+# res = num_str.count(find_zero)
 #
 # print(res)
 
 
 # ############ 2 ##########
 
-# def back_zero(n):
-#     s = str(n)
-#     count = 0
-#     for i in range(len(s)-1, -1, -1):
-#         if s[i] != "0":
-#             break
-#         count += 1
+# num = 1005000
+# find_s = "0"
 #
-#     return count
+# result = 0
+# num_str = str(num)[::-1]
 #
+# for i in num_str:
+#     if i == find_s:
+#         result += 1
+#     else:
+#         break
 #
-# tt = 202000
-#
-# print(back_zero(tt))
+# print(result)
+
 
 ################ 3 ############
 
@@ -84,17 +85,20 @@
 ############ 6 ###########
 
 
-# my_str = "43 більше ніж 34 , але менше ніж 56"
+# my_str = "43 більше ніж 34, але менше ніж 56"
 #
-# result = 0
+# result = []
 #
-# for el in my_str.split():
-#     print(el)
-#     if el.isdigit():
-#         result += int(el)
-#         print(result)
+# for word in my_str:
+#     if word.isalpha():
+#         my_str.replace(word, "").split(" ")
 #
-# print(result)
+# for word in my_str.split():
+#     if word.isdigit():
+#         result.append(int(word))
+#
+#
+# print(sum(result))
 
 
 ############ 7 ###########
@@ -120,8 +124,8 @@
 
 
 ########### 8 ##########
-#
-# #
+
+
 # my_list = [1,
 #            2,
 #            3,
@@ -134,10 +138,7 @@
 #
 # for el in my_list:
 #     if type(el) is str:
-#         new_list += el
-#         "".join(new_list)
-#         new_list.pop()
-#
+#         new_list.append(el)
 # print(new_list)
 
 
@@ -147,15 +148,15 @@
 # my_str = "Kkakgflalsf"
 # my_res = []
 #
-# for el in my_str.lower():
-#     if el not in my_res and my_str.count(el) == 1:
+# for el in set(my_str.lower()):
+#     if my_str.count(el) == 1:
 #         my_res.append(el)
 #
 # print(my_res)
 
 ########### 10 #############
 
-#
+
 # my_str_1 = "Hello world!"
 # my_str_2 = "We won this game"
 # result = []
@@ -168,21 +169,21 @@
 
 ############ 11 ###########
 
-# my_str_1 = "aaaasdf1"
-#
-# my_str_2 = "asdfff2"
-#
-# result = []
-#
-# set_1 = set(my_str_1)
-# set_2 = set(my_str_2)
-#
-# unique = set_1.intersection(set_2)
-#
-# for el in unique:
-#     if my_str_1.count(el) == 1 and my_str_2.count(el) == 1:
-#         result += el
-#
-#
-# print(result)
+my_str_1 = "aaaasdf1"
+
+my_str_2 = "asdfff2"
+
+result = []
+
+set_1 = set(my_str_1)
+set_2 = set(my_str_2)
+
+unique = set_1.intersection(set_2)
+
+for el in unique:
+    if my_str_1.count(el) == 1 and my_str_2.count(el) == 1:
+        result.append(el)
+
+
+print(result)
 
