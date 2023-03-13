@@ -17,12 +17,12 @@ import random
 #
 #
 # def list_sort(list_1, result):
-#
 #     for el in list_1:
 #         if el in list_1[::2]:
 #             result.append(el[::-1]), "".join(result)
 #         elif el in list_1[::1]:
 #             result.append(el), "".join(result)
+#
 #     return result
 #
 #
