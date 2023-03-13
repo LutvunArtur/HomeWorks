@@ -11,13 +11,13 @@ import random
 #         "print",
 #         "asc",
 #     ]
-#
 # res = [
 #
 # ]
 #
 #
 # def list_sort(list_1, result):
+#
 #     for el in list_1:
 #         if el in list_1[::2]:
 #             result.append(el[::-1]), "".join(result)
@@ -38,10 +38,10 @@ import random
 #     "cdaaa",
 #     "aaaacd",
 # ]
-# result = []
 #
 #
 # def str_w_a(list_1):
+#     result = []
 #     for el in list_1:
 #         if el.startswith("a"):
 #             result.append(el)
@@ -52,7 +52,7 @@ import random
 
 ########### 3  ########
 
-#
+
 # my_list = [
 #     "bccc",
 #     "abccc",
@@ -60,10 +60,12 @@ import random
 #     "cdaaa",
 #     "aaaacd",
 # ]
-# result = [
 #
-# ]
+#
 # def have_a(list_1):
+#     result = [
+#
+#     ]
 #     for el in my_list:
 #         if el.count("a"):
 #             result.append(el)
@@ -82,10 +84,10 @@ import random
 #            "22",
 #            33,
 # ]
-# result = []
 #
 #
 # def str_type(list_1):
+#     result = []
 #     for el in list_1:
 #         if type(el) == str:
 #             result.append(el)
@@ -96,12 +98,12 @@ import random
 
 ########### 5  ########
 
-#
+
 # my_str = "Kkakgflalsf"
-# my_res = []
 #
 #
 # def unique_el(list_1):
+#     my_res = []
 #     for el in set(list_1.lower()):
 #         if list_1.count(el) == 1:
 #             my_res.append(el)
@@ -114,10 +116,10 @@ import random
 
 # my_str_1 = "Hello world!"
 # my_str_2 = "We won this game"
-# result = []
 #
 #
 # def have_el(list_1, list_2):
+#     result = []
 #     for el in list_1:
 #         if el in list_2:
 #             result.append(el)
@@ -130,10 +132,10 @@ import random
 
 # my_str_1 = "aaaasdf1"
 # my_str_2 = "asdfff2"
-# result = []
 #
 #
 # def unique_2el(list_1, list_2):
+#     result = []
 #     set_1 = set(list_1)
 #     set_2 = set(list_2)
 #     unique = set_1.intersection(set_2)
@@ -147,17 +149,17 @@ import random
 
 ########### 8  ########
 
-domain = ["net", "com", "ua"]
-name = ["Artur", "Drew", "Boss"]
-
-
-def create_email(domains, names):
-    i = randint(0, len(names))
-    i_dom = randint(0, len(domains))
-    letters = ascii_lowercase
-    ran_str = "".join(random.choice(letters) for i in range(7))
-
-    return names[i] + str(randint(100, 999)) + "@" + ran_str + "." + domains[i_dom]
-
-
-print(create_email(domain, name))
+# domain = ["net", "com", "ua"]
+# name = ["Artur", "Drew", "Boss"]
+#
+#
+# def create_email(domains, names):
+#     i = randint(0, len(names))
+#     i_dom = randint(0, len(domains))
+#     letters = ascii_lowercase
+#     ran_str = "".join(random.choice(letters) for i in range(7))
+#
+#     return names[i] + str(randint(100, 999)) + "@" + ran_str + "." + domains[i_dom]
+#
+#
+# print(create_email(domain, name))
