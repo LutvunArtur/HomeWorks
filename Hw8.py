@@ -121,22 +121,19 @@ peoples = [
 
 ############ b ##########
 ## б) Створити список та помістити туди найдовше ім'я. Якщо довжина імені збігається - помістити такі імена
-
-# names = [
-#
-# ]
 # bigger_name = [
 #
 # ]
+# name = [
 #
-# for person in peoples:
-#     names.append(person["name"])
+# ]
 #
-# for el in names:
-#     for i in names:
-#         if len(el) > len(i) and bigger_name.count(el) == 0:
-#             bigger_name.append(el)
+# for el in peoples:
+#     names = el["name"]
+#     name.append(names)
 #
+# max_el = max(name, key=len)
+# bigger_name.append(max_el)
 #
 # print(bigger_name)
 
@@ -184,13 +181,13 @@ peoples = [
 # print(keys_dict)
 
 ######### b #########
-# result = [
+
+# set_1 = set(my_dict_1)
+# set_2 = set(my_dict_2)
 #
-# ]
+# res = set_2.difference(set_1)
+# result = list(res)
 #
-# key = my_dict_1.keys()
-# if key != my_dict_2.keys():
-#     result.append(key)
 #
 # print(result)
 
