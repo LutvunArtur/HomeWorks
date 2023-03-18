@@ -97,7 +97,7 @@ def date(name=authors_txt):
         if find_1 != -1:
             result_list.append(f"data: {cut_1}" + "\n")
     with open(test_2, "w") as new_data:
-        write_upd = new_data.writelines(str(result_list))
+        write_upd = new_data.writelines(result_list)
     return None
 
 
