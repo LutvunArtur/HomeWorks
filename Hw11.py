@@ -1,5 +1,4 @@
 import os
-
 directory = "Homeworks"
 
 
@@ -10,11 +9,11 @@ def return_names(file=directory):
     ]
     res_dict = {
     }
-    file = os.listdir()
+    files = os.listdir(file)
     res_dict["filenames"] = file_names
     res_dict["dirnames"] = dir_names
 
-    for el in file:
+    for el in files:
         if os.path.isfile(el):
             file_names.append(el)
         elif os.path.isdir(el):
