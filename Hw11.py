@@ -43,7 +43,5 @@ def file_or_dir(dicts, aded_file):
     return dicts
 
 
-print(file_or_dir(return_names(), aded_file=name_1))
-print(file_or_dir(return_names(), aded_file=name))
-
-
+add_name_1 = file_or_dir(return_names(), aded_file=name_1)
+add_name = file_or_dir(return_names(), aded_file=name)
