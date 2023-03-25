@@ -1,15 +1,15 @@
 domains_txt = "domains"
-testt = "test"
-names_txt = "names"
-test_2 = "test_2"
 authors_txt = "authors"
+names_txt = "names"
 
 
 class FileRedactor:
+
     def __init__(self, name):
         self.name = name
 
     def return_domaim(self):
+        testt = "test"
         with open(self.name, "r") as new_data:
             read_upd = new_data.readlines()
             testing_list = [
@@ -49,6 +49,7 @@ class FileRedactor:
         return None
 
     def date(self):
+        test_2 = "test_2"
         with open(self.name, "r") as my_file:
             read_upd = my_file.readlines()
         result_list = [
@@ -64,9 +65,11 @@ class FileRedactor:
         return None
 
 
-tests = FileRedactor(domains_txt)
-tests.return_domaim()
-tests = FileRedactor(names_txt)
-tests.return_names()
-tests = FileRedactor(authors_txt)
-tests.date()
+test_domain = FileRedactor(domains_txt)
+test_domain.return_domaim()
+
+test_names = FileRedactor(names_txt)
+test_names.return_names()
+
+test_data = FileRedactor(authors_txt)
+test_data.date()
