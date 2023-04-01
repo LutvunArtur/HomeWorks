@@ -27,9 +27,9 @@
                                   # 1 #
 # domains_txt = "domains"
 # testt = "test"
-
-
-# def return_domaim(name = domains_txt):
+#
+#
+# def return_domaim(name=domains_txt):
 #     with open(name, "r") as new_data:
 #         read_upd = new_data.readlines()
 #         testing_list = [
